@@ -7,6 +7,13 @@ import Experience from '@/components/Experience';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import ContactMe from '@/components/ContactMe';
+import HTML from '../images/html5.svg';
+import CSS from '../images/css3.svg';
+import JavaScript from '../images/javascript.svg';
+import Coding from '../images/undraw_coding_re_iv62.svg';
+import Reactlogo from '../images/react.svg';
+import TypeScript from '../images/typescript.svg'
+
 
 
 
@@ -46,7 +53,7 @@ const Home: NextPage = () => {
 
       
       <section id='projects' className='snap-start'>
-        <Projects />
+        <Projects projectImg={Coding} tech1={HTML} tech2={CSS} tech3={TypeScript} tech4={Reactlogo} />
       </section>
 
 
