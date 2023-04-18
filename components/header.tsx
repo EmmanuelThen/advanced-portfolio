@@ -1,6 +1,7 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 type Props = {}
 
@@ -23,9 +24,9 @@ function header({}: Props) {
             }}
             className='flex flex-row items-center'>
             {/*social icons were getting from a component library*/}
-            <SocialIcon url="https://github.com/EmmanuelThen" fgColor='gray' bgColor='transparent' />
-            <SocialIcon url="https://github.com/EmmanuelThen" fgColor='gray' bgColor='transparent' />
-            <SocialIcon url="https://github.com/EmmanuelThen" fgColor='gray' bgColor='transparent' />
+            <SocialIcon url="https://github.com/EmmanuelThen" fgColor='#4c8bf5' bgColor='transparent' />
+            <SocialIcon url="https://twitter.com/thenpixels" fgColor='#4c8bf5' bgColor='transparent' />
+            <SocialIcon url="https://linkedin.com/in/emmanuel-then/" fgColor='#4c8bf5' bgColor='transparent' />
             
         </motion.div>
 
@@ -43,8 +44,10 @@ function header({}: Props) {
             duration: 1.5
         }} 
         className='flex flex-row items-center text-gray-300 cursor-pointer'>
-        <SocialIcon className='curse-pointer' network='email' fgColor='gray' bgColor='transparent' />
-        <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get in Touch</p>
+        <SocialIcon className='curse-pointer' network='email' fgColor='#4c8bf5' bgColor='transparent' url='#contact' />
+        <Link href='#contact'>
+            <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get in Touch</p>
+        </Link>
         </motion.div>
         
 
